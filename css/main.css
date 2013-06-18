@@ -17,6 +17,14 @@ h1, h2, h3 {
   font-family: "Doppio One", sans-serif;
 }
 
+h2 {
+  color: #6E7C7D;
+}
+
+h3 {
+  color: #A9C8C9;
+}
+
 .pad {
   padding: 1em;
 }
@@ -30,7 +38,7 @@ ul.unstyled {
 .posts {
 }
   .posts .date {
-    color: #D6D6D6;
+    color: #aaa;
     font-style: italic;
     margin-right: 2em;
   }
@@ -46,7 +54,7 @@ ul.unstyled {
       margin-bottom: 1em;
     }
   .header .subtitle {
-    color: #A9C8C9;
+    color: #aaa;
     margin: 0 0 3em;
   }
   .header .title {
@@ -54,4 +62,7 @@ ul.unstyled {
     font-size: 2em;
     margin-bottom: 0;
   }
+    .header .title a {
+      color: #679A9C;
+    }
 
