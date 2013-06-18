@@ -38,14 +38,20 @@ ul.unstyled {
     font-size: 1.5em;
   }
 
-.title {
+.header {
 }
-  .title h1 {
+  .header .people {
+  }
+    .header .people li {
+      margin-bottom: 1em;
+    }
+  .header .subtitle {
+    color: #A9C8C9;
+    margin: 0 0 3em;
+  }
+  .header .title {
     color: #679A9C;
     font-size: 2em;
     margin-bottom: 0;
-  }
-  .title p {
-    margin: 0;
   }
 
