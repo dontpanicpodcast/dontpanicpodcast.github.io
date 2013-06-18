@@ -1,8 +1,51 @@
 @import url(http://fonts.googleapis.com/css?family=Doppio+One);
 
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+html {
+  color: #636363;
+}
+
+a {
+  color: #679A9C;
+  text-decoration: none;
+}
+  a:hover,
+  a:visited {
+    color: #6E7C7D;
+  }
+
+h1, h2, h3 {
+  font-family: "Doppio One", sans-serif;
+}
+
+.pad {
+  padding: 1em;
+}
+
+ol.unstyled,
+ul.unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.posts {
+}
+  .posts .date {
+    color: #D6D6D6;
+    font-style: italic;
+    margin-right: 2em;
+  }
+  .posts .link {
+    font-size: 1.5em;
+  }
+
+.title {
+}
+  .title h1 {
+    color: #679A9C;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .title p {
+    margin: 0;
+  }
 
