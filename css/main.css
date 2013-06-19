@@ -41,7 +41,6 @@ ul.unstyled {
 
 .date {
   color: #aaa;
-  font-style: italic;
 }
 
 .posts {
@@ -49,8 +48,12 @@ ul.unstyled {
   .posts .date {
     margin-right: 2em;
   }
+  .posts .length {
+    color: #aaa;
+  }
   .posts .link {
     font-size: 1.5em;
+    margin-right: 1em;
   }
 
 .header {

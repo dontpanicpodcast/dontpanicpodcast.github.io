@@ -5,6 +5,6 @@ title: "Don't Panic: Gadgets, the Internet, and You"
 
 <ol class="posts unstyled">
   {% for post in site.posts %}
-    <li><span class="date">{{ post.date | date_to_string }}</span> <a class="link" href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span class="date">{{ post.date | date_to_string }}</span> <a class="link" href="{{ post.url }}">{{ post.title }}</a> <span class="length">({{ post.length }})</span></li>
   {% endfor %}
 </ol>
