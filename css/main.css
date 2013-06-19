@@ -35,11 +35,14 @@ ul.unstyled {
   padding-left: 0;
 }
 
+.date {
+  color: #aaa;
+  font-style: italic;
+}
+
 .posts {
 }
   .posts .date {
-    color: #aaa;
-    font-style: italic;
     margin-right: 2em;
   }
   .posts .link {
