@@ -1,6 +1,9 @@
 name: "Don't Panic: Gadgets, the Internet, and You"
 url: "http://dontpanicpodcast.github.io"
+bucket: "http://s3.amazonaws.com/dontpanic"
 pygments: true
+
+author: "Colby Rabideau, Dan Miller & Shaun Jennings"
 
 exclude:
   - README.md

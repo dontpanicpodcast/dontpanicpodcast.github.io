@@ -32,7 +32,7 @@ layout: nil
       <pubDate>{{ post.date | date_to_rss }}</pubDate>
       <itunes:author><![CDATA[{{ site.author | strip_html }}]]></itunes:author>
       <itunes:summary><![CDATA[{{ post.summary }}]]></itunes:summary>
-      <enclosure url="http://s3.amazonaws.com/phptownhall/{{ post.filename }}.mp3" type="audio/mp3" length="{{ post.length }}" />
+      <enclosure url="{{ site.bucket }}/{{ post.filename }}.mp3" type="audio/mp3" length="{{ post.length }}" />
     </item>
     {% endfor %}
 
