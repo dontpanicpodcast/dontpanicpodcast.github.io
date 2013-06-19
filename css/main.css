@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  color: #A9C8C9;
+  color: #679A9C;
 }
 
 .pad {
@@ -47,6 +47,7 @@ ul.unstyled {
   }
 
 .header {
+  text-align: center;
 }
   .header .people {
   }
@@ -58,7 +59,6 @@ ul.unstyled {
     margin: 0 0 3em;
   }
   .header .title {
-    color: #679A9C;
     font-size: 2em;
     margin-bottom: 0;
   }
