@@ -6,7 +6,7 @@ layout: default
   <p class="date">#{{ page.episode }} -- {{ page.date | date: "%B %d, %Y" }} -- {{ page.length }}</p>
   <h2 class="title">{{ page.title }}</h2>
 
-  <h3><a href="{{ site.bucket }}/{{ page.date | date: "%y-%m-%d" }}-episode-{{ page.episode }}.mp3">listing</a></h3>
+  <h2><a href="{{ site.bucket }}/{{ page.date | date: "%y-%m-%d" }}-episode-{{ page.episode }}.mp3">listen</a></h2>
 
   {{ content }}
 
