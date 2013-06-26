@@ -12,7 +12,7 @@ a {
     color: #A9C8C9;
   }
   a:hover {
-    color: #679A9C;
+    color: #6E7C7D;
   }
 
 h1, h2, h3 {
@@ -45,7 +45,7 @@ ul.unstyled {
 
 .button,
 a.button {
-  background-color: #A9C8C9;
+  background-color: #6E7C7D;
   border-radius: 4px;
   color: #fff;
   display: inline-block;
