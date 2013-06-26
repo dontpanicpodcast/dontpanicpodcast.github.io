@@ -1,10 +1,12 @@
 ---
 layout: default
-title: "Don't Panic: Gadgets, the Internet, and You"
 ---
 
 <ol class="posts unstyled">
   {% for post in site.posts %}
-    <li><span class="date">{{ post.date | date_to_string }}</span> <a class="link" href="{{ post.url }}">{{ post.title }}</a> <span class="length">({{ post.length }})</span></li>
+    <li class="post">
+      <p class="date">#{{ post.episode }} - {{ post.date | date: "%B %d, %Y" }} - {{ post.length }}</p>
+      <h2 class="title"><a class="link" href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
   {% endfor %}
 </ol>

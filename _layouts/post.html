@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="date">{{ page.date | date_to_string }} - {{ page.length }}</p>
-
 <div class="post">
-{{ content }}
+
+  <h2 class="title">{{ page.title }}</h2>
+  <p class="date">#{{ page.episode }} - {{ page.date | date: "%B %d, %Y" }} - {{ page.length }}</p>
+
+  <h3><a href="{{ site.bucket }}/{{ page.date | date: "%y-%m-%d" }}-episode-{{ page.episode }}.mp3">listing</a></h3>
+
+  {{ content }}
+
 </div>

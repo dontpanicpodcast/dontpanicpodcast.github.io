@@ -25,6 +25,10 @@ h3 {
   color: #679A9C;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .pad {
   padding: 1em;
 }
@@ -42,19 +46,6 @@ ul.unstyled {
 .date {
   color: #aaa;
 }
-
-.posts {
-}
-  .posts .date {
-    margin-right: 2em;
-  }
-  .posts .length {
-    color: #aaa;
-  }
-  .posts .link {
-    font-size: 1.5em;
-    margin-right: 1em;
-  }
 
 .header {
   text-align: center;
@@ -76,3 +67,10 @@ ul.unstyled {
       color: #679A9C;
     }
 
+.post {}
+  .post .date {
+    margin: 0;
+  }
+  .post .title {
+    margin: 0;
+  }
