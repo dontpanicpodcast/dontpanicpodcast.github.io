@@ -9,7 +9,7 @@ Without further ado ladies and gentlement, the moment you've all been waiting fo
 
 Join us as we discuss Apple's iOS 7 announcement, NSA leaks, and Google's Project Loon.
 
-#### further reading:
+#### Further reading:
 
 * [iOS 7](http://www.apple.com/ios/ios7/)
 * [Security Now: Surveillence State](http://twit.tv/show/security-now/408)
