@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <li class="post">
       <p class="date">#{{ post.episode }} -- {{ post.date | date: "%B %d, %Y" }} -- {{ post.length }}</p>
-      <h2 class="title"><a class="link" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </li>
   {% endfor %}
 </ol>
