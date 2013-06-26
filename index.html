@@ -5,7 +5,7 @@ layout: default
 <ol class="posts unstyled">
   {% for post in site.posts %}
     <li class="post">
-      <p class="date">#{{ post.episode }} - {{ post.date | date: "%B %d, %Y" }} - {{ post.length }}</p>
+      <p class="date">#{{ post.episode }} -- {{ post.date | date: "%B %d, %Y" }} -- {{ post.length }}</p>
       <h2 class="title"><a class="link" href="{{ post.url }}">{{ post.title }}</a></h2>
     </li>
   {% endfor %}
