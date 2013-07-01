@@ -9,10 +9,10 @@ a {
   text-decoration: none;
 }
   a:visited {
-    color: #A9C8C9;
+    color: #99CBCE;
   }
   a:hover {
-    color: #6E7C7D;
+    color: #216265;
   }
 
 h1, h2, h3 {
@@ -70,6 +70,7 @@ a.button {
   .header .people {
   }
     .header .people li {
+      display: inline-block;
       margin-bottom: 1em;
     }
   .header .subtitle {
@@ -100,3 +101,13 @@ a.button {
   .post .title {
     margin-top: 0;
   }
+
+
+@media handheld,only screen and (max-width:768px){
+  .content .pad {
+    padding-top: 0;
+  }
+  .header .subtitle {
+    margin-bottom: 1em;
+  }
+}
