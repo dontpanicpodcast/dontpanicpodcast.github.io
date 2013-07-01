@@ -84,7 +84,9 @@ a.button {
       color: #679A9C;
     }
 
-.post {}
+.post {
+  margin-bottom: 2.5em;
+}
   .post .controls {
     margin-bottom: 1em;
   }
