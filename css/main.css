@@ -85,6 +85,13 @@ a.button {
     }
 
 .post {}
+  .post .controls {
+    margin-bottom: 1em;
+  }
+    .post .controls span {
+      display: inline-block;
+      margin-left: 1em;
+    }
   .post .date {
     margin-bottom: 0;
   }

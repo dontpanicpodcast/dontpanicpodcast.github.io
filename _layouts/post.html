@@ -10,6 +10,11 @@ layout: default
 
   <div class="controls">
     <a class="button" href="{{ site.bucket }}/{{ page.date | date: "%y-%m-%d" }}-episode-{{ page.episode }}.mp3">listen</a>
+    <span>Watch:</span>
   </div>
+
+  {% if page.youtube %}
+  <iframe width="560" height="315" src="//www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
+  {% endif %}
 
 </div>
