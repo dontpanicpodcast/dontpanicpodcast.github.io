@@ -66,7 +66,13 @@
 
             <div class="links">
               <ul class="unstyled">
-                <li><a href="/live.html">Listen Live</a></li>
+                <li>
+                {% if site.live %}
+                  <a class="button" href="/live.html">Listen Live</a>
+                {% else %}
+                  <a href="/live.html">Listen Live</a>
+                {% endif %}
+                </li>
               </ul>
             </div>
           </div>

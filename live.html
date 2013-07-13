@@ -1,11 +1,10 @@
 ---
-live: false
 layout: default
 title: Listen Live
 youtube_id: jenningsproductions
 ---
 
-{% if page.live %}
+{% if site.live %}
 <h1>We're on the air!!!</h1>
 <div class="onair" data-width="456" data-uid="{{ page.youtube_id }}"></div>
 {% else %}
