@@ -1,0 +1,21 @@
+---
+live: false
+layout: default
+title: Listen Live
+youtube_id: jenningsproductions
+---
+
+{% if page.live %}
+<h1>We're on the air!!!</h1>
+<div class="onair" data-width="456" data-uid="{{ page.youtube_id }}"></div>
+{% else %}
+<h1>Tune in live Tuesdays @ 11:00pm EST</h1>
+<p>We record the Don't Panic show at 11:00pm Eastern every Tuesday! Tune in live, and join us in IRC!<p>
+{% endif %}
+
+<h2>Chat on Freenode</h2>
+
+<iframe src="https://kiwiirc.com/client/irc.freeode.net/?nick=dontpanic_|?#dontpanic" style="border:0; width:100%; height:350px;"></iframe>
+
+<!-- scripts -->
+<script type="text/javascript" src="/js/hangoutonair.js"></script>
