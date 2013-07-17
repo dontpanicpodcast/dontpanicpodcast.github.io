@@ -3,7 +3,7 @@ url: "http://dontpanic.io"
 bucket: "http://s3.amazonaws.com/dontpanicpodcast"
 pygments: true
 
-live: true
+live: false
 
 author: "Colby Rabideau, Dan Miller & Shaun Jennings"
 
