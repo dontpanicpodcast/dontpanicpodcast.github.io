@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Listen Live
-youtube_id: jenningsproductions
+youtube_id: fOR5TJ7Fks4
 ---
 
-{% if site.live %}
+{% if page.youtoube_id %}
 <h1>We're on the air!!!</h1>
 <!--<div class="onair" data-width="456" data-uid="{{ page.youtube_id }}"></div>-->
-<iframe width="456" height="315" src="//www.youtube.com/embed/Giqyhy4pt1M" frameborder="0" allowfullscreen></iframe>
+<iframe width="456" height="315" src="//www.youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
 {% else %}
 <h1>Tune in live Tuesdays @ 11:00pm EST</h1>
 <p>We record the Don't Panic show at 11:00pm Eastern every Tuesday! Tune in live, and join us in IRC!<p>
