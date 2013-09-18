@@ -11,7 +11,7 @@ layout: nil
     <itunes:author><![CDATA[{{ site.author | strip_html }}]]></itunes:author>
     <itunes:subtitle><![CDATA[{{ site.subtitle }}]]></itunes:subtitle>
     <description><![CDATA[{{ site.description }}]]></description>
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:explicit>yes</itunes:explicit>
 
     <itunes:owner>
       <itunes:name>Colby Rabideau</itunes:name>
