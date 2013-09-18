@@ -1,4 +1,5 @@
-name: "Don't Panic: Gadgets, the Internet, and You"
+name: "Don't Panic"
+subtitle: "Gadgets, the Internet, and You"
 url: "http://dontpanic.io"
 bucket: "http://s3.amazonaws.com/dontpanicpodcast"
 pygments: true
