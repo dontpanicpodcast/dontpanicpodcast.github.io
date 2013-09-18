@@ -1,7 +1,7 @@
 ---
 episode: 14
 layout: post
-length: 01:13:00
+length: 01:08:45
 title: Kitkat, Bumping and Farm Fresh to Your Door
 youtube: 5LSD7st9jOY
 ---
