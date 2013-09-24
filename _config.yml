@@ -1,12 +1,12 @@
 name: "Don't Panic"
 subtitle: "Gadgets, the Internet, and You"
 description: "It's a podcast about gadgets, the Internet and you!
-Tune in live with Shaun, Dan and Colby on Tuesdays at 11pm EST (8pm PST) at http://dontpanic.io/."
+Tune in live with Shaun, Dan and Colby on Mondays at 11pm EST (8pm PST) at http://dontpanic.io/."
 url: "http://dontpanic.io"
 bucket: "http://s3.amazonaws.com/dontpanicpodcast"
 pygments: true
 
-live: false
+live: true
 
 author: "Colby Rabideau, Dan Miller & Shaun Jennings"
 
