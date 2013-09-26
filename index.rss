@@ -12,7 +12,7 @@ layout: nil
     <itunes:subtitle><![CDATA[{{ site.subtitle }}]]></itunes:subtitle>
     <itunes:summary><![CDATA[{{ site.description }}]]></itunes:summary>
     <description><![CDATA[{{ site.description }}]]></description>
-    <itunes:explicit>yes</itunes:explicit>
+    <itunes:explicit>no</itunes:explicit>
 
     <itunes:owner>
       <itunes:name>Colby Rabideau</itunes:name>
@@ -27,12 +27,16 @@ layout: nil
     {% for post in site.posts limit: 20 %}
     <item>
       <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
-      <description><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></description>
+      <description><![CDATA[{{ post.content | strip_html | cdata_escape }}]]></description>
+      <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
+
       <link>{{ site.url }}{{ post.url }}</link>
       <guid>{{ site.url }}{{ post.url }}</guid>
       <pubDate>{{ post.date | date_to_rss }}</pubDate>
       <itunes:author><![CDATA[{{ site.author | strip_html }}]]></itunes:author>
-      <itunes:summary><![CDATA[{{ post.summary }}]]></itunes:summary>
+      <itunes:duration>{{ post.length }}</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary><![CDATA[{{ post.description | strip_html }}]]></itunes:summary>
       <enclosure url="{{ site.bucket }}/{{ post.date | date: "%y-%m-%d" }}-episode-{{ post.episode }}.mp3" type="audio/mp3" length="{{ post.length }}" />
     </item>
     {% endfor %}
