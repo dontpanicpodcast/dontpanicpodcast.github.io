@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
-        <meta name="description" content="It's a podcast about gadgets and the web">
+        <meta name="description" content="{{ site.description }}">
 
         {% if page.title %}
-        <title>{{ page.title }} | {{ site.name }}</title>
+        <title>{{ page.title }} | {{ site.name }}: {{ site.subtitle }}</title>
         {% else %}
-        <title>{{ site.name }}</title>
+        <title>{{ site.name }}: {{ site.subtitle }}</title>
         {% endif %}
 
         <link rel="icon" href="/img/logo-32x32.png">
@@ -66,6 +66,7 @@
 
             <div class="links">
               <ul class="unstyled">
+                <li><a class="button" href="https://itunes.apple.com/us/podcast/dont-panic/id711008016">iTunes</a></li>
                 <li>
                 {% if site.live %}
                   <a class="button" href="/live.html">Listen Live</a>
@@ -73,6 +74,7 @@
                   <a href="/live.html">Listen Live</a>
                 {% endif %}
                 </li>
+                <li><a href="/index.rss">RSS</a></li>
               </ul>
             </div>
           </div>
