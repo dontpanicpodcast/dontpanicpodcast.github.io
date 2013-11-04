@@ -28,7 +28,7 @@ layout: nil
     <item>
       <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
       <description><![CDATA[{{ post.content | strip_html | cdata_escape }}]]></description>
-      <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
+      <content:encoded><![CDATA[{{ post.content | escape | cdata_escape }}]]></content:encoded>
 
       <link>{{ site.url }}{{ post.url }}</link>
       <guid>{{ site.url }}{{ post.url }}</guid>
