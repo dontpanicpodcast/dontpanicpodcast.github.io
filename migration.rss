@@ -1,0 +1,46 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title><![CDATA[{{ site.name }}]]></title>
+    <link>{{ site.url }}</link>
+    <language>en-us</language>
+    <copyright><![CDATA[{{ site.author | strip_html }}]]></copyright>
+    <itunes:author><![CDATA[{{ site.author | strip_html }}]]></itunes:author>
+    <itunes:subtitle><![CDATA[{{ site.subtitle }}]]></itunes:subtitle>
+    <itunes:summary><![CDATA[{{ site.description }}]]></itunes:summary>
+    <description><![CDATA[{{ site.description }}]]></description>
+    <itunes:explicit>no</itunes:explicit>
+
+    <itunes:owner>
+      <itunes:name>Colby Rabideau</itunes:name>
+      <itunes:email>idontknow5691@gmail.com</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="{{ site.bucket }}/logo.jpg" />
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
+
+    {% for post in site.posts %}
+    <item>
+      <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
+      <description><![CDATA[{{ post.content | strip_html | cdata_escape }}]]></description>
+      <content><![CDATA[{{ post.content | cdata_escape }}]]></content>
+      <youtube>{{ post.youtube }}</youtube>
+
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date_to_rss }}</pubDate>
+      <itunes:author><![CDATA[{{ site.author | strip_html }}]]></itunes:author>
+      <itunes:duration>{{ post.length }}</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary><![CDATA[{{ post.description | strip_html }}]]></itunes:summary>
+      <enclosure url="{{ site.bucket }}/{{ post.date | date: "%y-%m-%d" }}-episode-{{ post.episode }}.mp3" type="audio/mp3" length="{{ post.length }}" />
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>
