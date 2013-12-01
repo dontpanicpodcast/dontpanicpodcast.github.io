@@ -1,7 +1,7 @@
 ---
 episode: 10
 layout: post
-length: 
+length: 01:03:36
 title: Windows 8, Metro Apps and the Future of Touch
 youtube: LI9HWVEWUeg
 ---
