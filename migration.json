@@ -1,0 +1,15 @@
+---
+layout: nil
+---
+[
+  {% for post in site.posts %}
+  {
+    "title": "{{ post.title }}",
+    "content": "{{ post.content }}",
+    "youtube_id": "{{ post.youtube }}",
+    "url": "{{ site.bucket }}/{{ post.date | date: "%y-%m-%d" }}-episode-{{ post.episode }}.mp3",
+    "pubDate": "{{ post.date | date_to_rss }}",
+    "length": "{{ post.length }}"
+  },
+  {% endfor %}
+]
