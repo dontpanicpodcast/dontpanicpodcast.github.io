@@ -23,7 +23,7 @@ layout: nil
       <itunes:category text="Tech News"/>
     </itunes:category>
 
-    {% for post in site.posts limit: 20 %}
+    {% for post in site.posts %}
     <item>
       <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
       <description><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></description>
